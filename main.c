@@ -123,8 +123,8 @@ int main() {
     TerminalDims tdims = get_terminal_dims();
     // Decrement row so we have room for user input
     --tdims.rows;
-    double density = 0.5;
-    double chance_to_stay_red = 0.75;
+    double density = 0.25;
+    double chance_to_stay_red = 0.8;
     CellColor screen[tdims.rows][tdims.cols];
     fill_screen(tdims.rows, tdims.cols, screen, density);
     while (any_red(tdims.rows, tdims.cols, screen)) {
